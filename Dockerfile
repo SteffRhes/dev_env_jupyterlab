@@ -1,7 +1,8 @@
 FROM debian:latest
 RUN apt update
 RUN apt install -y python3 python3-pip
-RUN pip install --break-system-packages \
+RUN rm /usr/lib/python3*/EXTERNALLY-MANAGED
+RUN pip install \
   jupyterlab \
   jupyterlab-code-formatter \
   black \
