@@ -1,6 +1,7 @@
 FROM debian:latest
 RUN apt update
 RUN apt install -y python3 python3-pip
+RUN ln -s /usr/bin/python3 /usr/bin/python
 RUN rm /usr/lib/python3*/EXTERNALLY-MANAGED
 RUN pip install \
   jupyterlab \
