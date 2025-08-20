@@ -71,7 +71,8 @@
                 "pylsp.plugins.pycodestyle.filename": [],
                 "pylsp.plugins.pycodestyle.select": [],
                 "pylsp.plugins.pycodestyle.ignore": [
-                    "E303"
+                    "E303",
+                    "E501"
                 ],
                 "pylsp.plugins.pycodestyle.hangClosing": null,
                 "pylsp.plugins.pycodestyle.maxLineLength": null,
